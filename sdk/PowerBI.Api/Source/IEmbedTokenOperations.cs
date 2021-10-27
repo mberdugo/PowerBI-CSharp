@@ -40,7 +40,7 @@ namespace Microsoft.PowerBI.Api
         /// in
         /// [GenerateTokenRequestV2](/rest/api/power-bi/embed-token/generate-token#generatetokenrequestv2)&lt;/li&gt;&lt;li&gt;Dataset.ReadWrite.All
         /// or Dataset.Read.All&lt;/li&gt;&lt;/ul&gt;Note that when `allowEdit`
-        /// is set to `false`, the client can still go into edit mode, but they
+        /// is set to `false`, the client can go into *edit* mode, but they
         /// can’t save any changes.&lt;br/&gt;To set the permissions scope, see
         /// [Register an
         /// app](https://docs.microsoft.com/power-bi/developer/register-app).&lt;br/&gt;When
