@@ -239,8 +239,9 @@ namespace Microsoft.PowerBI.Api
         /// Create group request parameters
         /// </param>
         /// <param name='workspaceV2'>
-        /// (Preview feature) Whether to create a workspace. The only supported value
-        /// is `true`.
+        /// (Preview feature) Whether to create a [new workspace
+        /// experience](/power-bi/collaborate-share/service-new-workspaces) workspace,
+        /// that is to say a **V2** workspace. The only supported value is `true`.
         /// </param>
         /// <param name='customHeaders'>
         /// Headers that will be added to request.
@@ -2232,6 +2233,7 @@ namespace Microsoft.PowerBI.Api
         /// </summary>
         /// <remarks>
         ///
+        /// This API call call only updates workspaces in the new workspace experience.
         /// Only the name and description can be updated. The name must be unique
         /// inside an organization.
         ///
@@ -2530,7 +2532,8 @@ namespace Microsoft.PowerBI.Api
         /// </summary>
         /// <remarks>
         ///
-        /// This API call only supports adding a user principle.
+        /// This API call only supports updating workspaces in the new workspace
+        /// experience and adding a user principle.
         ///
         /// ## Permissions
         ///
@@ -2682,7 +2685,8 @@ namespace Microsoft.PowerBI.Api
         /// </summary>
         /// <remarks>
         ///
-        /// This API call only supports adding a user principle.
+        /// This API call only supports updating workspaces in the new workspace
+        /// experience and adding a user principle.
         ///
         /// ## Permissions
         ///
@@ -2838,7 +2842,8 @@ namespace Microsoft.PowerBI.Api
         /// </summary>
         /// <remarks>
         ///
-        /// Use this API call to restore workspaces.
+        /// This API call only supports restoring workspaces in the new workspace
+        /// experience.
         ///
         /// ## Permissions
         ///

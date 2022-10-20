@@ -484,10 +484,11 @@ namespace Microsoft.PowerBI.Api
         }
 
         /// <summary>
-        /// Creates a new data source on the specified on-premises gateway.
+        /// Creates a new data source on the specified gateway. This API only works for
+        /// creating an on-prem data source. Cloud data sources aren't supported.
         /// </summary>
         /// <remarks>
-        /// &lt;br&gt;On premises data source credentials must be encrypted. The
+        /// &lt;br&gt;On prem data source credentials must be encrypted. The
         /// `encryptedConnection` parameter must be set to `Encrypted` and the
         /// credentials should be encrypted using the gateway public key.
         /// &gt; [!NOTE]
@@ -502,8 +503,7 @@ namespace Microsoft.PowerBI.Api
         ///
         /// ## Permissions
         ///
-        /// Supports only on-premises gateways and the user must have gateway admin
-        /// permissions
+        /// The user must have gateway admin permissions.
         ///
         /// ## Required Scope
         ///
@@ -511,7 +511,7 @@ namespace Microsoft.PowerBI.Api
         ///
         /// ## Limitations
         ///
-        /// - Virtual network (VNet) and Cloud gateways aren't supported.
+        /// - Virtual network (VNet) gateways aren't supported.
         /// - OAuth2 as a credential type isn't supported.
         /// &lt;br&gt;&lt;br&gt;
         /// </remarks>
@@ -957,6 +957,10 @@ namespace Microsoft.PowerBI.Api
         /// <summary>
         /// Updates the credentials of the specified data source from the specified
         /// gateway.
+        /// For cloud datasource, get the gateway id by using the [Datasets - Get
+        /// Datasources](/rest/api/power-bi/datasets/get-datasources) or [Datasets -
+        /// Get Datasources In
+        /// Group](/rest/api/power-bi/datasets/get-datasources-in-group) APIs.
         /// </summary>
         /// <remarks>
         ///
@@ -983,7 +987,7 @@ namespace Microsoft.PowerBI.Api
         ///
         /// ## Permissions
         ///
-        /// - With on-premises gateways, the user must have gateway admin permissions.
+        /// - The user must have gateway admin permissions.
         /// - This API call can be called by a service principal profile. For more
         /// information see: [Service principal profiles in Power BI
         /// Embedded](/power-bi/developer/embedded/embed-multi-tenancy).

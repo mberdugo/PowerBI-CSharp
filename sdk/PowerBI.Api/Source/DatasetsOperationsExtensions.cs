@@ -68,9 +68,7 @@ namespace Microsoft.PowerBI.Api
             ///
             /// ## Limitations
             ///
-            /// This API call only supports **push datasets**. For a complete list of
-            /// limitations, see [Push datasets
-            /// limitations](/power-bi/developer/embedded/push-datasets-limitations).
+            /// This API call only supports **push datasets**.
             /// &lt;br&gt;&lt;br&gt;
             /// </remarks>
             /// <param name='operations'>
@@ -98,9 +96,7 @@ namespace Microsoft.PowerBI.Api
             ///
             /// ## Limitations
             ///
-            /// This API call only supports **push datasets**. For a complete list of
-            /// limitations, see [Push datasets
-            /// limitations](/power-bi/developer/embedded/push-datasets-limitations).
+            /// This API call only supports **push datasets**.
             /// &lt;br&gt;&lt;br&gt;
             /// </remarks>
             /// <param name='operations'>
@@ -277,7 +273,9 @@ namespace Microsoft.PowerBI.Api
 
             /// <summary>
             /// Executes Data Analysis Expressions (DAX) queries against the provided
-            /// dataset. The dataset must reside in **My workspace** or another workspace.
+            /// dataset. The dataset must reside in **My workspace** or another [new
+            /// workspace experience](/power-bi/collaborate-share/service-new-workspaces)
+            /// workspace.
             /// </summary>
             /// <remarks>
             ///
@@ -310,6 +308,9 @@ namespace Microsoft.PowerBI.Api
             ///
             /// ## Limitations
             ///
+            /// - Only datasets in a [new workspace
+            /// experience](/power-bi/collaborate-share/service-new-workspaces) workspace,
+            /// that is to say a **V2** workspace, are supported.
             /// - Datasets that are hosted in Azure Analysis Services or that have a live
             /// connection to an on-premises Azure Analysis Services model aren't
             /// supported.
@@ -349,7 +350,9 @@ namespace Microsoft.PowerBI.Api
 
             /// <summary>
             /// Executes Data Analysis Expressions (DAX) queries against the provided
-            /// dataset. The dataset must reside in **My workspace** or another workspace.
+            /// dataset. The dataset must reside in **My workspace** or another [new
+            /// workspace experience](/power-bi/collaborate-share/service-new-workspaces)
+            /// workspace.
             /// </summary>
             /// <remarks>
             ///
@@ -382,6 +385,9 @@ namespace Microsoft.PowerBI.Api
             ///
             /// ## Limitations
             ///
+            /// - Only datasets in a [new workspace
+            /// experience](/power-bi/collaborate-share/service-new-workspaces) workspace,
+            /// that is to say a **V2** workspace, are supported.
             /// - Datasets that are hosted in Azure Analysis Services or that have a live
             /// connection to an on-premises Azure Analysis Services model aren't
             /// supported.
@@ -437,9 +443,7 @@ namespace Microsoft.PowerBI.Api
             ///
             /// ## Limitations
             ///
-            /// This API call only supports **push datasets**. For a complete list of
-            /// limitations, see [Push datasets
-            /// limitations](/power-bi/developer/embedded/push-datasets-limitations).
+            /// This API call only supports **push datasets**.
             /// &lt;br&gt;&lt;br&gt;
             /// </remarks>
             /// <param name='operations'>
@@ -465,9 +469,7 @@ namespace Microsoft.PowerBI.Api
             ///
             /// ## Limitations
             ///
-            /// This API call only supports **push datasets**. For a complete list of
-            /// limitations, see [Push datasets
-            /// limitations](/power-bi/developer/embedded/push-datasets-limitations).
+            /// This API call only supports **push datasets**.
             /// &lt;br&gt;&lt;br&gt;
             /// </remarks>
             /// <param name='operations'>
@@ -640,9 +642,7 @@ namespace Microsoft.PowerBI.Api
             ///
             /// ## Limitations
             ///
-            /// This API call only supports **push datasets**. For a complete list of
-            /// limitations, see [Push datasets
-            /// limitations](/power-bi/developer/embedded/push-datasets-limitations).
+            /// This API call only supports **push datasets**.
             /// &lt;br&gt;&lt;br&gt;
             /// </remarks>
             /// <param name='operations'>
@@ -671,9 +671,7 @@ namespace Microsoft.PowerBI.Api
             ///
             /// ## Limitations
             ///
-            /// This API call only supports **push datasets**. For a complete list of
-            /// limitations, see [Push datasets
-            /// limitations](/power-bi/developer/embedded/push-datasets-limitations).
+            /// This API call only supports **push datasets**.
             /// &lt;br&gt;&lt;br&gt;
             /// </remarks>
             /// <param name='operations'>
@@ -716,7 +714,7 @@ namespace Microsoft.PowerBI.Api
             /// </param>
             /// <param name='top'>
             /// The requested number of entries in the refresh history. If not provided,
-            /// the default is the last available 500 entries.
+            /// the default is all available entries.
             /// </param>
             public static Refreshes GetRefreshHistory(this IDatasetsOperations operations, string datasetId, int? top = default(int?))
             {
@@ -746,7 +744,7 @@ namespace Microsoft.PowerBI.Api
             /// </param>
             /// <param name='top'>
             /// The requested number of entries in the refresh history. If not provided,
-            /// the default is the last available 500 entries.
+            /// the default is all available entries.
             /// </param>
             /// <param name='cancellationToken'>
             /// The cancellation token.
@@ -1872,6 +1870,9 @@ namespace Microsoft.PowerBI.Api
             /// Dataset.ReadWrite.All
             /// ## Limitations
             ///
+            /// - Only datasets in a [new workspace
+            /// experience](/power-bi/collaborate-share/service-new-workspaces) workspace,
+            /// that is to say a V2 workspace, are supported.
             /// - Adding permissions to service principals (app principalType) isn't
             /// supported
             /// - Caller must have ReadReshare permissions on the dataset.
@@ -1912,6 +1913,9 @@ namespace Microsoft.PowerBI.Api
             /// Dataset.ReadWrite.All
             /// ## Limitations
             ///
+            /// - Only datasets in a [new workspace
+            /// experience](/power-bi/collaborate-share/service-new-workspaces) workspace,
+            /// that is to say a V2 workspace, are supported.
             /// - Adding permissions to service principals (app principalType) isn't
             /// supported
             /// - Caller must have ReadReshare permissions on the dataset.
@@ -1961,6 +1965,9 @@ namespace Microsoft.PowerBI.Api
             /// permissions](/power-bi/developer/embedded/datasets-permissions).
             /// ## Limitations
             ///
+            /// - Only datasets in a [new workspace
+            /// experience](/power-bi/collaborate-share/service-new-workspaces) workspace,
+            /// that is to say a V2 workspace, are supported.
             /// - Updating permissions to service principals (app principalType) isn't
             /// supported
             /// - Caller must have ReadWriteReshare permissions on the dataset. That is,
@@ -2013,6 +2020,9 @@ namespace Microsoft.PowerBI.Api
             /// permissions](/power-bi/developer/embedded/datasets-permissions).
             /// ## Limitations
             ///
+            /// - Only datasets in a [new workspace
+            /// experience](/power-bi/collaborate-share/service-new-workspaces) workspace,
+            /// that is to say a V2 workspace, are supported.
             /// - Updating permissions to service principals (app principalType) isn't
             /// supported
             /// - Caller must have ReadWriteReshare permissions on the dataset. That is,
@@ -2066,7 +2076,10 @@ namespace Microsoft.PowerBI.Api
             /// Dataset.Read.All or Dataset.ReadWrite.All
             /// ## Limitations
             ///
-            /// Caller must have ReadWriteReshare permissions on the dataset. That is,
+            /// - Only datasets in a [new workspace
+            /// experience](/power-bi/collaborate-share/service-new-workspaces) workspace,
+            /// that is to say a V2 workspace are supported.
+            /// - Caller must have ReadWriteReshare permissions on the dataset. That is,
             /// folder admins, members and contributors with Reshare permissions, or
             /// dataset owners.
             /// &lt;br&gt;&lt;br&gt;
@@ -2105,7 +2118,10 @@ namespace Microsoft.PowerBI.Api
             /// Dataset.Read.All or Dataset.ReadWrite.All
             /// ## Limitations
             ///
-            /// Caller must have ReadWriteReshare permissions on the dataset. That is,
+            /// - Only datasets in a [new workspace
+            /// experience](/power-bi/collaborate-share/service-new-workspaces) workspace,
+            /// that is to say a V2 workspace are supported.
+            /// - Caller must have ReadWriteReshare permissions on the dataset. That is,
             /// folder admins, members and contributors with Reshare permissions, or
             /// dataset owners.
             /// &lt;br&gt;&lt;br&gt;
@@ -2146,6 +2162,9 @@ namespace Microsoft.PowerBI.Api
             /// Dataset.ReadWrite.All
             /// ## Limitations
             ///
+            /// - Only datasets in a [new workspace
+            /// experience](/power-bi/collaborate-share/service-new-workspaces) workspace,
+            /// that is to say a V2 workspace, or **My workspace** are supported.
             /// - Adding permissions to service principals (app principalType) isn't
             /// supported
             /// - Caller must have ReadReshare permissions on the dataset.
@@ -2183,6 +2202,9 @@ namespace Microsoft.PowerBI.Api
             /// Dataset.ReadWrite.All
             /// ## Limitations
             ///
+            /// - Only datasets in a [new workspace
+            /// experience](/power-bi/collaborate-share/service-new-workspaces) workspace,
+            /// that is to say a V2 workspace, or **My workspace** are supported.
             /// - Adding permissions to service principals (app principalType) isn't
             /// supported
             /// - Caller must have ReadReshare permissions on the dataset.
@@ -2230,6 +2252,9 @@ namespace Microsoft.PowerBI.Api
             ///
             /// ## Limitations
             ///
+            /// - Only datasets in a [new workspace
+            /// experience](/power-bi/collaborate-share/service-new-workspaces) workspace,
+            /// that is to say a V2 workspace, or **My workspace** are supported.
             /// - Updating permissions to service principals (app principalType) isn't
             /// supported
             /// - Caller must have ReadWriteReshare permissions on the dataset. That is,
@@ -2280,6 +2305,9 @@ namespace Microsoft.PowerBI.Api
             ///
             /// ## Limitations
             ///
+            /// - Only datasets in a [new workspace
+            /// experience](/power-bi/collaborate-share/service-new-workspaces) workspace,
+            /// that is to say a V2 workspace, or **My workspace** are supported.
             /// - Updating permissions to service principals (app principalType) isn't
             /// supported
             /// - Caller must have ReadWriteReshare permissions on the dataset. That is,
@@ -2330,7 +2358,10 @@ namespace Microsoft.PowerBI.Api
             /// Dataset.Read.All or Dataset.ReadWrite.All
             /// ## Limitations
             ///
-            /// Caller must have ReadWriteReshare permissions on the dataset. That is,
+            /// - Only datasets in a [new workspace
+            /// experience](/power-bi/collaborate-share/service-new-workspaces) workspace,
+            /// that is to say a V2 workspace, or **My workspace** are supported.
+            /// - Caller must have ReadWriteReshare permissions on the dataset. That is,
             /// folder admins, members and contributors with Reshare permissions, or
             /// dataset owners.
             /// &lt;br&gt;&lt;br&gt;
@@ -2366,7 +2397,10 @@ namespace Microsoft.PowerBI.Api
             /// Dataset.Read.All or Dataset.ReadWrite.All
             /// ## Limitations
             ///
-            /// Caller must have ReadWriteReshare permissions on the dataset. That is,
+            /// - Only datasets in a [new workspace
+            /// experience](/power-bi/collaborate-share/service-new-workspaces) workspace,
+            /// that is to say a V2 workspace, or **My workspace** are supported.
+            /// - Caller must have ReadWriteReshare permissions on the dataset. That is,
             /// folder admins, members and contributors with Reshare permissions, or
             /// dataset owners.
             /// &lt;br&gt;&lt;br&gt;
@@ -2459,9 +2493,7 @@ namespace Microsoft.PowerBI.Api
             ///
             /// ## Limitations
             ///
-            /// This API call only supports **push datasets**. For a complete list of
-            /// limitations, see [Push datasets
-            /// limitations](/power-bi/developer/embedded/push-datasets-limitations).
+            /// This API call only supports **push datasets**.
             /// &lt;br&gt;&lt;br&gt;
             /// </remarks>
             /// <param name='operations'>
@@ -2492,9 +2524,7 @@ namespace Microsoft.PowerBI.Api
             ///
             /// ## Limitations
             ///
-            /// This API call only supports **push datasets**. For a complete list of
-            /// limitations, see [Push datasets
-            /// limitations](/power-bi/developer/embedded/push-datasets-limitations).
+            /// This API call only supports **push datasets**.
             /// &lt;br&gt;&lt;br&gt;
             /// </remarks>
             /// <param name='operations'>
@@ -2788,9 +2818,7 @@ namespace Microsoft.PowerBI.Api
             ///
             /// ## Limitations
             ///
-            /// This API call only supports **push datasets**. For a complete list of
-            /// limitations, see [Push datasets
-            /// limitations](/power-bi/developer/embedded/push-datasets-limitations).
+            /// This API call only supports **push datasets**.
             /// &lt;br&gt;&lt;br&gt;
             /// </remarks>
             /// <param name='operations'>
@@ -2817,9 +2845,7 @@ namespace Microsoft.PowerBI.Api
             ///
             /// ## Limitations
             ///
-            /// This API call only supports **push datasets**. For a complete list of
-            /// limitations, see [Push datasets
-            /// limitations](/power-bi/developer/embedded/push-datasets-limitations).
+            /// This API call only supports **push datasets**.
             /// &lt;br&gt;&lt;br&gt;
             /// </remarks>
             /// <param name='operations'>
@@ -3007,9 +3033,7 @@ namespace Microsoft.PowerBI.Api
             ///
             /// ## Limitations
             ///
-            /// This API call only supports **push datasets**. For a complete list of
-            /// limitations, see [Push datasets
-            /// limitations](/power-bi/developer/embedded/push-datasets-limitations).
+            /// This API call only supports **push datasets**.
             /// &lt;br&gt;&lt;br&gt;
             /// </remarks>
             /// <param name='operations'>
@@ -3041,9 +3065,7 @@ namespace Microsoft.PowerBI.Api
             ///
             /// ## Limitations
             ///
-            /// This API call only supports **push datasets**. For a complete list of
-            /// limitations, see [Push datasets
-            /// limitations](/power-bi/developer/embedded/push-datasets-limitations).
+            /// This API call only supports **push datasets**.
             /// &lt;br&gt;&lt;br&gt;
             /// </remarks>
             /// <param name='operations'>
@@ -3098,7 +3120,7 @@ namespace Microsoft.PowerBI.Api
             /// </param>
             /// <param name='top'>
             /// The requested number of entries in the refresh history. If not provided,
-            /// the default is the last available 500 entries.
+            /// the default is all available entries.
             /// </param>
             public static Refreshes GetRefreshHistoryInGroup(this IDatasetsOperations operations, System.Guid groupId, string datasetId, int? top = default(int?))
             {
@@ -3137,7 +3159,7 @@ namespace Microsoft.PowerBI.Api
             /// </param>
             /// <param name='top'>
             /// The requested number of entries in the refresh history. If not provided,
-            /// the default is the last available 500 entries.
+            /// the default is all available entries.
             /// </param>
             /// <param name='cancellationToken'>
             /// The cancellation token.
@@ -3261,12 +3283,6 @@ namespace Microsoft.PowerBI.Api
             /// </summary>
             /// <remarks>
             ///
-            /// ## Permissions
-            ///
-            /// This API call can be called by a service principal profile. For more
-            /// information see: [Service principal profiles in Power BI
-            /// Embedded](/power-bi/developer/embedded/embed-multi-tenancy).
-            ///
             /// ## Required Scope
             ///
             /// Dataset.ReadWrite.All or Dataset.Read.All
@@ -3295,12 +3311,6 @@ namespace Microsoft.PowerBI.Api
             /// dataset from the specified workspace.
             /// </summary>
             /// <remarks>
-            ///
-            /// ## Permissions
-            ///
-            /// This API call can be called by a service principal profile. For more
-            /// information see: [Service principal profiles in Power BI
-            /// Embedded](/power-bi/developer/embedded/embed-multi-tenancy).
             ///
             /// ## Required Scope
             ///
@@ -4540,7 +4550,8 @@ namespace Microsoft.PowerBI.Api
 
             /// <summary>
             /// Executes Data Analysis Expressions (DAX) queries against the provided
-            /// dataset.
+            /// dataset. The dataset must reside in a [new workspace
+            /// experience](/power-bi/collaborate-share/service-new-workspaces) workspace.
             /// </summary>
             /// <remarks>
             ///
@@ -4573,6 +4584,9 @@ namespace Microsoft.PowerBI.Api
             ///
             /// ## Limitations
             ///
+            /// - Only datasets in a [new workspace
+            /// experience](/power-bi/collaborate-share/service-new-workspaces) workspace,
+            /// that is to say a **V2** workspace, are supported.
             /// - Datasets that are hosted in Azure Analysis Services or that have a live
             /// connection to an on-premises Azure Analysis Services model aren't
             /// supported.
@@ -4615,7 +4629,8 @@ namespace Microsoft.PowerBI.Api
 
             /// <summary>
             /// Executes Data Analysis Expressions (DAX) queries against the provided
-            /// dataset.
+            /// dataset. The dataset must reside in a [new workspace
+            /// experience](/power-bi/collaborate-share/service-new-workspaces) workspace.
             /// </summary>
             /// <remarks>
             ///
@@ -4648,6 +4663,9 @@ namespace Microsoft.PowerBI.Api
             ///
             /// ## Limitations
             ///
+            /// - Only datasets in a [new workspace
+            /// experience](/power-bi/collaborate-share/service-new-workspaces) workspace,
+            /// that is to say a **V2** workspace, are supported.
             /// - Datasets that are hosted in Azure Analysis Services or that have a live
             /// connection to an on-premises Azure Analysis Services model aren't
             /// supported.
